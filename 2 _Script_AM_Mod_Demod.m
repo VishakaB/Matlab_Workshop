@@ -36,6 +36,7 @@ Ac = 2; % Carrier signal amplitude
 
 % Message signal (sine wave)
 message_signal = Am * sin(2*pi*fm*t);
+fprintf('Message Signal: Amplitude = %.2f, Frequency = %d Hz\n', Am, fm);
 
 % Carrier signal (sine wave)
 carrier_signal = Ac * sin(2*pi*fc*t);
