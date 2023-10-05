@@ -28,7 +28,7 @@ close all
 fs = 2^14; % Sampling frequency
 t = 0:1/fs:1; % Time vector
 fc = 1000; % Carrier frequency (Hz)
-fm = 50; % Message signal frequency (Hz)
+fm = 100; % Message signal frequency (Hz)
 Am = 1; % Message signal amplitude
 Ac = 2; % Carrier signal amplitude
 
@@ -36,9 +36,10 @@ Ac = 2; % Carrier signal amplitude
 
 % Message signal (sine wave)
 message_signal = Am * sin(2*pi*fm*t);
+fprintf('Message Signal: Amplitude = %.2f, Frequency = %d Hz\n', Am, fm);
 
 % Carrier signal (sine wave)
-carrier_signal = Ac * sin(2*pi*fc*t);
+carrier_signal = Ac * cos(2*pi*fc*t);
 
 % DSB modulation
 modulated_signal = message_signal .* carrier_signal;
