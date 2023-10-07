@@ -1,1 +1,1 @@
-# Amplitude modulation and Demodulation | Matlab_Workshop | MSc in Electronics and Communications Engineering | Information Session
+# Matlab for Communication Systems | Matlab_Workshop | MSc in Electronics and Communications Engineering | Information Session
